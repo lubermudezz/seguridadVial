@@ -1,0 +1,53 @@
+.pad-in {
+    padding: 5% 15%;
+}
+
+.h1{
+    color: #FFFFFF;
+}
+
+.mb {
+    margin-bottom: 1em;
+}
+
+.customize-card {
+    min-height: 100%;
+}
+
+
+.tl {
+    text-align: center;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bg-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red; 
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlqsyY5rh2kAACkIXtTDO97F5_Hsa7bCYDEg&s'); 
+    background-position: center;
+    height: 30em;
+}
+
+.uade-logo {
+    width: 30%;
+}
+
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: #2B3035;
+    color: white;
+}
+
+.game-section {
+    height: 100vh;
+}
