@@ -49,6 +49,7 @@ body, html {
 }
 
 footer{
+    position: fixed;
     width: 100%;
     background-color: #2B3035;
     color: white;
