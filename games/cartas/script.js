@@ -24,11 +24,11 @@ const scoreElement = document.getElementById('score');
 const errorsElement = document.getElementById('errors');
 const victoryMessage = document.getElementById('victoryMessage');
 const defeatMessage = document.getElementById('defeatMessage');
-const restartMessage = document.getElementById('restartMessage'); // referencia al mensaje de reinicio
-const restartButton = document.getElementById('restartButton'); // referencia al botón de reinicio dentro del mensaje
+const restartMessage = document.getElementById('restartMessage');
+const restartButton = document.getElementById('restartButton');
 let score = 0;
-let errors = 10; // Change the maximum errors allowed to 10
-const maxErrors = 10; // Update the maximum errors constant
+let errors = 10;
+const maxErrors = 10;
 let matchedPairs = 0;
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -87,7 +87,7 @@ function disableCards() {
 
     if (matchedPairs === cardsArray.length / 2) {
         victoryMessage.style.display = 'block';
-        restartMessage.style.display = 'block'; // Mostrar el mensaje de reinicio
+        restartMessage.style.display = 'block';
     }
 
     resetBoard();
@@ -104,13 +104,13 @@ function unflipCards() {
         errorsElement.textContent = errors;
         
         if (score >= 10) {
-            score -= 10; // Deduct 10 points for each error, only if score is 10 or more
+            score -= 10;
             scoreElement.textContent = score;
         }
 
         if (errors <= 0) {
             defeatMessage.style.display = 'block';
-            restartMessage.style.display = 'block'; // Mostrar el mensaje de reinicio
+            restartMessage.style.display = 'block';
             disableAllCards();
         }
 
@@ -129,10 +129,10 @@ function disableAllCards() {
 }
 
 function restartGame() {
-    // Ocultar el mensaje de reinicio
+   
     restartMessage.style.display = 'none';
 
-    // Reiniciar variables
+    
     score = 0;
     errors = 10;
     matchedPairs = 0;
@@ -141,7 +141,7 @@ function restartGame() {
     victoryMessage.style.display = 'none';
     defeatMessage.style.display = 'none';
 
-    // Limpiar el tablero
+    
     gameBoard.innerHTML = '';
     cardsArray.sort(() => 0.5 - Math.random());
     createBoard();

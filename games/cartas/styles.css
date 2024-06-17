@@ -20,7 +20,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 20px;
-    padding-top: 80px; /* Add padding to avoid overlap with fixed header */
+    padding-top: 80px;
 }
 
 .score-board {
