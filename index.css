@@ -13,6 +13,11 @@ body, html {
     background-color: #FFFFFF;
 }
 
+.card-img-top {
+    width: 80%;
+    margin: auto;
+}
+
 .pad-in {
     padding: 5% 15%;
 }
@@ -49,7 +54,6 @@ body, html {
 }
 
 footer{
-    position: fixed;
     width: 100%;
     background-color: #2B3035;
     color: white;
