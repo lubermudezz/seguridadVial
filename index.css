@@ -13,6 +13,15 @@ body, html {
     background-color: #FFFFFF;
 }
 
+.card-title {
+    height: 5vh;
+}
+
+.card-text a, .card-body a {
+    margin-bottom: 10px;
+    color: #F2C61E;
+}
+
 .card-img-top {
     width: 70%;
     margin: auto;
@@ -28,11 +37,18 @@ body, html {
 
 .customize-card {
     min-height: 100%;
+    border: solid 2px;
+    border-color: #F2C61E;
+    padding: 10px;
 }
 
 
 .tl {
     text-align: center;
+}
+
+.team-section-title {
+    color: #2B3035;
 }
 
 .home-card {
@@ -71,65 +87,6 @@ header {
     height: 10vh;
 }
 
-.vialmente-option {
-    min-height: 210px;
-    max-height: 210px;
-}
-
-#vialmente-answers-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#choice-game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
-    height: 87vh;
-}
-
-.vialmente-card {
-    border: solid 2px;
-    border-color: #F2C61E;
-    margin-right: 15px;
-}
-
-.vialmente-card:hover {
-    cursor: pointer;
-    filter: drop-shadow(2px 4px 6px black);
-}
-
-.vialmente-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.vialmente-modal-content {
-    background-color: #2B3035;
-    font-style: italic;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    width: 35%;
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .color-palette-dark{
     background-color: #2B3035;
     color: white;
@@ -143,4 +100,9 @@ header {
 
 .list-identidad-visual {
     padding-bottom: 10px;
+}
+
+.btn-secondary {
+    background-color: #2B3035;
+    color: #F2C61E;
 }

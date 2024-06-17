@@ -1,0 +1,105 @@
+#modal-message{
+    color: #F2C61E;
+}
+
+
+.vialmente-info-question {
+    padding: 0px 10px;
+    text-align: center;
+}
+
+#vialmente-score-div{
+    margin-top: 10px;
+    display: flex;
+    background-color: #2B3035;
+    color: #F2C61E;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.vialmente-option {
+    min-height: 210px;
+    max-height: 210px;
+    border: solid 2px;
+    border-color: #F2C61E;
+    min-width: 225px;
+    max-width: 225px;
+}
+
+#vialmente-answers-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#choice-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    min-height: 87vh;
+    padding-bottom: 10px;
+}
+
+.vialmente-card {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.vialmente-card:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.vialmente-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.vialmente-modal-content {
+    background-color: #2B3035;
+    font-style: italic;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40vh;
+    width: 35vh;
+    height: 20vh;
+}
+
+
+.btn-secondary {
+    background-color: #2B3035;
+    color: #F2C61E;
+}
+
+footer{
+    width: 100%;
+    background-color: #2B3035;
+    color: white;
+    text-align: center;
+}
+
+.game-section {
+    height: 100vh;
+}
+
+header {
+    height: 10vh;
+}

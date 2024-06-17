@@ -118,13 +118,11 @@ header {
     text-align: center;
 }
 
-footer {
-    margin-top: auto;
-    padding: 10px 0;
-    text-align: center;
-    background-color: #f8f9fa;
+footer{
     width: 100%;
-    font-size: 0.7rem;
+    background-color: #2B3035;
+    color: white;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -140,3 +138,7 @@ footer {
     }
 }
 
+.btn-secondary {
+    background-color: #2B3035;
+    color: #F2C61E;
+}
