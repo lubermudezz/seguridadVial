@@ -4,6 +4,18 @@ body {
     background-color: #f0f0f0;
 }
 
+section {
+    height: 88vh;
+}
+
+header {
+    height: 10vh;
+}
+
+.ahorcado-title {
+    text-align: center;
+}
+
 #rules {
     margin: 20px auto;
     width: 80%;
@@ -51,6 +63,7 @@ body {
     padding: 1px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 #play-again {
@@ -74,4 +87,11 @@ body {
         grid-template-columns: repeat(2, 100px);
         grid-template-rows: repeat(4, 150px);
     }
+}
+
+footer{
+    width: 100%;
+    background-color: #2B3035;
+    color: white;
+    text-align: center;
 }

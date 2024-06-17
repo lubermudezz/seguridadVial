@@ -14,7 +14,7 @@ body, html {
 }
 
 .card-img-top {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -87,6 +87,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 2vh;
+    height: 87vh;
 }
 
 .vialmente-card {
@@ -127,4 +128,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.color-palette-dark{
+    background-color: #2B3035;
+    color: white;
+    padding: 5px;
+}
+
+.color-palette-light{
+    background-color: #F2C61E;
+    padding: 5px;
+}
+
+.list-identidad-visual {
+    padding-bottom: 10px;
 }

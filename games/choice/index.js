@@ -30,7 +30,6 @@ const container = document.getElementById('vialmente-answers-container');
 const questionContainer = document.getElementById('question-container');
 const feedbackModal = document.getElementById('feedback-modal')
 const modalMessage = document.getElementById('modal-message');
-const startGameButton = document.getElementById('start-game-button')
 const rerunGameButton = document.getElementById('rerun-game-button')
 const scoreContainer = document.getElementById('vialmente-score-div')
 
@@ -44,7 +43,6 @@ function startGame() {
     current = 0; 
     score = 0;
     gameStarted = true;
-    startGameButton.classList.add('d-none')
     rerunGameButton.classList.add('d-none')
     updateScore()
     shuffleArray(info_arr)
@@ -107,3 +105,5 @@ function updateScore() {
     scoreContainer.innerText = `Tu puntaje actual: ${score}`
 
 }
+
+startGame()
