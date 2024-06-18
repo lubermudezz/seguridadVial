@@ -29,6 +29,24 @@ const questions = [
 let currentQuestion = 0;
 let correctAnswers = 0;
 
+function startGame() {
+  // obtener el contenedor de la pregunta quiz-container y remplazarlo con html
+  const quizContainer = document.querySelector(".quiz-container");
+  quizContainer.innerHTML = `
+    <h1>Preguntados</h1>
+    <div class="question">
+        <p id="question-text"></p>
+        <div class="choices">
+            <button class="choice" onclick="checkAnswer(0)"></button>
+            <button class="choice" onclick="checkAnswer(1)"></button>
+            <button class="choice" onclick="checkAnswer(2)"></button>
+        </div>
+        <p id="feedback"></p>
+    </div>
+  `;
+  showQuestion();
+}
+
 function showQuestion() {
   const questionText = document.getElementById("question-text");
   questionText.textContent = questions[currentQuestion].question;
