@@ -71,12 +71,12 @@ body {
 }
 
 #traffic-light-pedestrians .red-light.active {
-    background-image: url('img/rojo.jpg'); /* Asegúrate de tener la imagen en la carpeta adecuada */
+    background-image: url('img/rojo.jpg'); 
     background-size: cover;
 }
 
 #traffic-light-pedestrians .green-light.active {
-    background-image: url('img/verde.jpg'); /* Asegúrate de tener la imagen en la carpeta adecuada */
+    background-image: url('img/verde.jpg'); 
     background-size: cover;
 }
 
