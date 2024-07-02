@@ -95,3 +95,8 @@ footer{
     color: white;
     text-align: center;
 }
+
+.btn-secondary {
+    background-color: #2B3035;
+    color: #F2C61E;
+}

@@ -57,13 +57,13 @@ function showImages() {
     if (current < info_arr.length) {
         const imageTags = info_arr[current].options.map(e => `<div class="vialmente-card"><img src="${e}" class="vialmente-option"></div>`);
         container.innerHTML = imageTags.join('');
-        questionContainer.innerHTML = `<h2>${info_arr[current].question}</h2>`;
+        questionContainer.innerHTML = `<h2 class="vialmente-info-question">${info_arr[current].question}</h2>`;
 
         document.querySelectorAll('.vialmente-option').forEach(img => {
             img.addEventListener('click', handleOptionClick);
         });
     } else {
-        container.innerHTML = `<p>Has completado todas las preguntas. ¡Bien hecho! Tu puntaje final: ${score} puntos</p>`;
+        container.innerHTML = `<p>Has completado todas las preguntas. ¡Bien hecho! Tu puntaje final: <strong> ${score} </strong> puntos</p>`;
         questionContainer.innerHTML = '';
         scoreContainer.style.display = 'none'
         rerunGameButton.classList.remove("d-none");

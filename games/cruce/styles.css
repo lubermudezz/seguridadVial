@@ -116,3 +116,8 @@ button:hover {
 .hidden {
     display: none;
 }
+
+.btn-secondary {
+    background-color: #2B3035;
+    color: #F2C61E;
+}
