@@ -30,7 +30,6 @@ const container = document.getElementById('vialmente-answers-container');
 const questionContainer = document.getElementById('question-container');
 const feedbackModal = document.getElementById('feedback-modal')
 const modalMessage = document.getElementById('modal-message');
-const startGameButton = document.getElementById('start-game-button')
 const rerunGameButton = document.getElementById('rerun-game-button')
 const scoreContainer = document.getElementById('vialmente-score-div')
 
@@ -44,7 +43,6 @@ function startGame() {
     current = 0; 
     score = 0;
     gameStarted = true;
-    startGameButton.classList.add('d-none')
     rerunGameButton.classList.add('d-none')
     updateScore()
     shuffleArray(info_arr)
@@ -59,13 +57,13 @@ function showImages() {
     if (current < info_arr.length) {
         const imageTags = info_arr[current].options.map(e => `<div class="vialmente-card"><img src="${e}" class="vialmente-option"></div>`);
         container.innerHTML = imageTags.join('');
-        questionContainer.innerHTML = `<h2>${info_arr[current].question}</h2>`;
+        questionContainer.innerHTML = `<h2 class="vialmente-info-question">${info_arr[current].question}</h2>`;
 
         document.querySelectorAll('.vialmente-option').forEach(img => {
             img.addEventListener('click', handleOptionClick);
         });
     } else {
-        container.innerHTML = `<p>Has completado todas las preguntas. ¡Bien hecho! Tu puntaje final: ${score} puntos</p>`;
+        container.innerHTML = `<p>Has completado todas las preguntas. ¡Bien hecho! Tu puntaje final: <strong> ${score} </strong> puntos</p>`;
         questionContainer.innerHTML = '';
         scoreContainer.style.display = 'none'
         rerunGameButton.classList.remove("d-none");
@@ -107,3 +105,5 @@ function updateScore() {
     scoreContainer.innerText = `Tu puntaje actual: ${score}`
 
 }
+
+startGame()
