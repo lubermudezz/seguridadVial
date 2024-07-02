@@ -1,4 +1,4 @@
-const questions = [
+const unorderQuestions = [
   {
     question:
       "¿Que color de luz de semaforo permite el avance de los vehiculos?",
@@ -28,6 +28,8 @@ const questions = [
     correct: 1,
   },
 ];
+
+const questions = unorderQuestions.sort(() => Math.random() - 0.5);
 
 let currentQuestion = 0;
 let correctAnswers = 0;
